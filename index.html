@@ -1,0 +1,844 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>TheTimeZone</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <body>
+        <!-- deskptop modal on top -->
+        <div class="modal">
+            <div></div>
+            <div class="text">
+                <p>Take 30% off when you spend $120 <a href="#"> Go shop</a></p>
+            </div>
+            <div>
+                <ion-icon class="modal-icon" name="close-circle-outline"></ion-icon>
+            </div>
+        </div>
+        <!--  -->
+
+
+        <!-- modal with the social media icons on less than 981px screens  -->
+
+        <div class="mobile-modal">
+            <div></div>
+            <div class="modal-icons" id="mobile-modal">
+                <ion-icon class="modal-icon" name="logo-facebook"></ion-icon>
+                <ion-icon class="modal-icon" name="logo-instagram"></ion-icon>
+                <ion-icon class="modal-icon" name="logo-twitter"></ion-icon>
+                <ion-icon class="modal-icon" name="logo-pinterest"></ion-icon>
+                <ion-icon class="modal-icon" name="logo-linkedin"></ion-icon>
+            </div>
+            <div>
+                <ion-icon class="modal-icon close-icon" name="close-circle-outline"></ion-icon>
+            </div>
+
+
+        </div>
+
+        <!-- Desktop Navbar -->
+        <div class="desktop-navbar" id="top">
+
+            <header class="header">
+                <div></div>
+                <div class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-link"><a href="index.html">HOME</a></li>
+                    </ul>
+
+
+                    <img src="/images/logo.png" alt="" class="desktop-logo">
+
+                    <ul class="navbar-list">
+                        <li class="navbar-link">
+                            <a href="">CASIO</a>
+                            <ion-icon class="link-icon" name="chevron-down-outline"></ion-icon>
+                            <span class="link-badge">HOT</span>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a href="">Edifice</a></li>
+                                    <li><a href="">MTP</a></li>
+                                    <li><a href="">LTP</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="navbar-link">
+                            <a href="">OMAX</a>
+                        </li>
+                        <li class="navbar-link">
+                            <a href="">BIGOTTI</a>
+
+                            <ion-icon class="link-icon" name="chevron-down-outline"></ion-icon>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a href="">Mens</a></li>
+                                    <li><a href="">Womens</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-link"><a href="#">DANIEL KLIEN</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-icon">
+                    <ion-icon class="mobile-nav-icon" name="basket-outline"></ion-icon>
+                </div>
+            </header>
+        </div>
+
+        <!--  -->
+
+
+        <!-- Mobile Navbar -->
+        <div class="mobile-navbar ">
+
+            <header class="mobile-header ">
+                <div class="mobile-nav-icon-btn">
+                    <ion-icon class="mobile-nav-icon" name="menu-outline" onclick="toggleEffect()"></ion-icon>
+                    <ion-icon class="mobile-nav-icon" name="close-circle-outline" onclick="toggleEffect()"></ion-icon>
+                </div>
+                <img src="/images/logo.png" alt="" class="logo">
+                <div class="mobile-nav-icon-btn">
+                    <ion-icon class="mobile-nav-icon" name="heart-outline"></ion-icon>
+                    <ion-icon class="mobile-nav-icon" name="basket-outline"></ion-icon>
+                </div>
+                <div class="side-menu">
+
+                </div>
+            </header>
+        </div>
+        <!--  -->
+        <main>
+            <div class="container">
+                <img src="/images/slider.jpg" alt="" class="container-img">
+                <div class="container-bg-text">
+                    <H1>REVOLUTION</H1>
+                    <H1>WATCHES</H1>
+                </div>
+
+                <div class="container-upper-text">
+                    <p>The Time Zone Watches</p>
+                    <h1>Revolution</h1>
+                    <h1>Watches</h1>
+                    <p>Price Only: &#163;999.00</p>
+                    <button>shop now</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- trendind container -->
+
+        <div class="Trending-text">
+            <h3>Trending <span class="element">Now</span></h3>
+        </div>
+        <div class="Trending-container">
+            <div class="trending-card">
+                <img src="/images/Trending-1.png" alt="" class="trending-card-img">
+                <div class="trending-card-dcp">
+                    <div class="brand-name">LTP</div>
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="trending-card-price">Rs8,000.00</div>
+                    <div class="count-box">
+                        <span class="count-box-left">-</span>
+                        <span class="count-box-center">0</span>
+                        <span class="count-box-right">+</span>
+                        <span><ion-icon class="count-box-icon" name="bag-handle-outline"></ion-icon></span>
+                    </div>
+                </div>
+
+
+                <div class="trending-card-hover-icons">
+                    <ion-icon class="trending-card-hover-icon yellow" name="bag-outline"></ion-icon>
+                    <ion-icon class="trending-card-hover-icon red" name="heart-outline"></ion-icon>
+                    <ion-icon class="trending-card-hover-icon green " onclick="ToggleQuickview()" name="eye-outline"></ion-icon>
+                </div>
+
+            </div>
+
+            <div class="trending-card">
+                <img src="/images/Trending-2.png" alt="" class="trending-card-img" onmouseover="hover(this);" onmouseout="unhover(this);">
+                <div class="trending-card-dcp">
+                    <div class="brand-name">LTP</div>
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="trending-card-price">Rs8,000.00</div>
+                    <div class="count-box">
+                        <span class="count-box-left">-</span>
+                        <span class="count-box-center">0</span>
+                        <span class="count-box-right">+</span>
+                        <span><ion-icon class="count-box-icon" name="bag-handle-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="trending-card-hover-icons">
+                    <ion-icon class="trending-card-hover-icon yellow" name="bag-outline"></ion-icon>
+                    <ion-icon class="trending-card-hover-icon red" name="heart-outline"></ion-icon>
+                    <ion-icon class="trending-card-hover-icon green " onclick="ToggleQuickview()" name="eye-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <img src="/images/Trending-3.png" alt="" class="trending-card-img">
+                <div class="trending-card-dcp">
+                    <div class="brand-name">LTP</div>
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="trending-card-price">Rs8,000.00</div>
+                    <div class="count-box">
+                        <span class="count-box-left">-</span>
+                        <span class="count-box-center">0</span>
+                        <span class="count-box-right">+</span>
+                        <span><ion-icon class="count-box-icon" name="bag-handle-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="trending-card-hover-icons">
+                    <ion-icon class="trending-card-hover-icon yellow" name="bag-outline"></ion-icon>
+                    <ion-icon class="trending-card-hover-icon red" name="heart-outline"></ion-icon>
+                    <ion-icon class="trending-card-hover-icon green " onclick="ToggleQuickview()" name="eye-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <img src="/images/trending-4.png" alt="" class="trending-card-img">
+                <div class="trending-card-dcp">
+                    <div class="brand-name">LTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="trending-card-price">Rs8,000.00</div>
+                    <div class="count-box">
+                        <span class="count-box-left">-</span>
+                        <span class="count-box-center">0</span>
+                        <span class="count-box-right">+</span>
+                        <span><ion-icon class="count-box-icon" name="bag-handle-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="trending-card-hover-icons">
+                    <ion-icon class="trending-card-hover-icon yellow" name="bag-outline"></ion-icon>
+                    <ion-icon class="trending-card-hover-icon red" name="heart-outline"></ion-icon>
+                    <ion-icon class="trending-card-hover-icon green " onclick="ToggleQuickview()" name="eye-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <!-- Discount product container 1 -->
+        <div class="Trending-text">
+            <h3>Discount Product <span class="element"> &nbsp; Hurry Up! &nbsp;</span></h3>
+        </div>
+        <div class="discount-container">
+            <div class="discount-container-tabs">
+                <ion-icon class="discount-container-icon" name="basket-outline"></ion-icon>
+                <h2>MTP</h2>
+                <ion-icon class="discount-container-icon" name="storefront-outline"></ion-icon>
+                <h2>Edifice</h2>
+                <ion-icon class="discount-container-icon" name="gift-outline"></ion-icon>
+                <h2>LTP</h2>
+
+
+            </div>
+
+            <div class="discount-card">
+                <img src="/images/discountcard-1.png" alt="" class="discount-card-img">
+
+                <div class="trending-card-dcp">
+                    <div class="brand-name">MTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="brand-name">Casio</div>
+                    <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                    <button class="discount-card-btn">Select Options</button>
+
+                </div>
+                <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                <div class="discount-heart-icon">
+                    <ion-icon class="icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="discount-card">
+                <img src="/images/discountcard-2.png" alt="" class="discount-card-img">
+
+                <div class="trending-card-dcp">
+                    <div class="brand-name">MTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="brand-name">Casio</div>
+                    <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                    <button class="discount-card-btn">Select Options</button>
+
+                </div>
+                <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                <div class="discount-heart-icon">
+                    <ion-icon class="icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="discount-card">
+                <img src="/images/discountcard-3.png" alt="" class="discount-card-img">
+
+                <div class="trending-card-dcp">
+                    <div class="brand-name">MTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="brand-name">Casio</div>
+                    <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                    <button class="discount-card-btn">Select Options</button>
+
+                </div>
+                <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                <div class="discount-heart-icon">
+                    <ion-icon class="icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="discount-card">
+                <img src="/images/discountcard-4.png" alt="" class="discount-card-img">
+
+                <div class="trending-card-dcp">
+                    <div class="brand-name">MTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="brand-name">Casio</div>
+                    <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                    <button class="discount-card-btn">Select Options</button>
+
+                </div>
+                <button class="discount-card-quick-btn" onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                <div class="discount-heart-icon">
+                    <ion-icon class="icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="discount-card">
+                <img src="/images/discountcard-5.png" alt="" class="discount-card-img">
+
+                <div class="trending-card-dcp">
+                    <div class="brand-name">MTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="brand-name">Casio</div>
+                    <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                    <button class="discount-card-btn">Select Options</button>
+
+                </div>
+                <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                <div class="discount-heart-icon">
+                    <ion-icon class="icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="discount-card">
+                <img src="/images/discountcard-6.png" alt="" class="discount-card-img">
+
+                <div class="trending-card-dcp">
+                    <div class="brand-name">MTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="brand-name">Casio</div>
+                    <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                    <button class="discount-card-btn">Select Options</button>
+
+                </div>
+                <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                <div class="discount-heart-icon">
+                    <ion-icon class="icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+
+            <div class="discount-card">
+                <img src="/images/discountcard-7.png" alt="" class="discount-card-img">
+
+                <div class="trending-card-dcp">
+                    <div class="brand-name">MTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="brand-name">Casio</div>
+                    <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                    <button class="discount-card-btn">Select Options</button>
+
+                </div>
+                <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                <div class="discount-heart-icon">
+                    <ion-icon class="icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="discount-card">
+                <img src="/images/discountcard-8.png" alt="" class="discount-card-img">
+
+                <div class="trending-card-dcp">
+                    <div class="brand-name">MTP</div>
+
+                    <div class="code">mtp-e600b-2b</div>
+                    <div class="brand-name">Casio</div>
+                    <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                    <button class="discount-card-btn">Select Options</button>
+
+                </div>
+                <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                <div class="discount-heart-icon">
+                    <ion-icon class="icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Discount product container 2 -->
+        <div class="Trending-text">
+            <h3>Discount Product <span class="element"> &nbsp; Hurry Up! &nbsp;</span></h3>
+        </div>
+        <div class="discount-container">
+            <div class="discount-container-tabs">
+                <ion-icon id="men-tab" class="discount-container-icon" name="basket-outline"></ion-icon>
+                <h2> Men</h2>
+                <ion-icon id="women-tab" class="discount-container-icon" name="storefront-outline"></ion-icon>
+                <h2> Women</h2>
+            </div>
+
+            <div class="mens-container">
+                <div id="men">
+
+
+                    <div class="discount-card">
+                        <img src="/images/discountcard-1.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Casio</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="discount-card">
+                        <img src="/images/discountcard-2.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Casio</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="discount-card">
+                        <img src="/images/discountcard-3.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Casio</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="discount-card">
+                        <img src="/images/discountcard-4.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Casio</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="discount-card">
+                        <img src="/images/discountcard-5.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Casio</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="discount-card">
+                        <img src="/images/discountcard-6.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Casio</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+
+                    <div class="discount-card">
+                        <img src="/images/discountcard-7.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Casio</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="discount-card">
+                        <img src="/images/discountcard-8.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Casio</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                    Quick View 
+                </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- women  -->
+            <!-- display none and block -->
+            <div class="women-container">
+                <!-- display flex -->
+                <div id="women">
+                    <div class="discount-card">
+                        <img src="/images/bigotti-Women-1.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Bigotti</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                        Quick View 
+                    </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="discount-card">
+                        <img src="/images/bigotti-Women-2.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Bigotti</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn " onclick="ToggleQuickview()">
+                        Quick View 
+                    </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+                    
+                    <div class="discount-card">
+                        <img src="/images/bigotti-Women-3.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Bigotti</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn quick-view-toggle" onclick="ToggleQuickview()">
+                        Quick View 
+                    </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="discount-card">
+                        <img src="/images/bigotti-Women-4.png" alt="" class="discount-card-img">
+
+                        <div class="trending-card-dcp">
+                            <div class="brand-name">MTP</div>
+
+                            <div class="code">mtp-e600b-2b</div>
+                            <div class="brand-name">Bigotti</div>
+                            <div class="trending-card-price">Rs8,000.00 - Rs9,000.00</div>
+                            <button class="discount-card-btn">Select Options</button>
+
+                        </div>
+                        <button class="discount-card-quick-btn quick-view-toggle" onclick="ToggleQuickview()">
+                        Quick View 
+                    </button>
+                        <div class="discount-heart-icon">
+                            <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="services">
+            <a href="#">
+                <ion-icon name="bus"></ion-icon>worldwide free shipping
+            </a>
+            <a href="#">
+                <ion-icon name="shield-checkmark"></ion-icon>SAFE & SECURELY SHOPPING
+            </a>
+            <a href="#">
+                <ion-icon name="repeat"></ion-icon>30 - DAY FREE & FAST RETURNS
+            </a>
+            <a href="#">
+                <ion-icon name="headset"></ion-icon>24/7 CUSTOMER SUPPORT
+            </a>
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-logos">
+                <img src="./images/footer-logo.png" alt="">
+                <p>Get the latest updates on new products & upcoming sale</p>
+                <div class="follow-us">
+                    <!-- <h1 style="padding-top:5px;">Follow Us:</h1> -->
+                    <div class="social-icons">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+            <div class="information">
+                <h1>Information</h1>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Abouts Us
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Delivery Information
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Privacy Policy
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Store Location
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Order History
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Terms & Conditions
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Contact Us
+                </a>
+            </div>
+            <div class="myaccount">
+                <h1>My Account</h1>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>My Account
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Brand
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Gift Certificates
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Affiliates
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>My Wishlist
+                </a>
+
+            </div>
+            <div class="contactinfo">
+                <h1>Contact Us</h1>
+                <a href="#">
+                    <ion-icon name="location"></ion-icon>
+                    1st Floor Safa Gold Mall F-7 Markaz Islamabad
+                </a>
+                <a href="#">
+                    <ion-icon name="location"></ion-icon>1st Floor Giga Mall World Trade center Islamabad
+                </a>
+                <a href="#">
+                    <ion-icon name="call"></ion-icon>
+                    Phone : 0316-8335101 <br> &nbsp; &nbsp; &nbsp; PTCL : 051- 2725617
+                </a>
+                <a href="#">
+                    <ion-icon name="mail"></ion-icon>care@thetimezone.pk
+                </a>
+                <a href="#">
+                    <ion-icon name="time"></ion-icon>Mon-Sat 9:00pm - 5:00pm Sun:Closed
+                </a>
+
+            </div>
+
+        </footer>
+        <hr>
+        <!-- copyrights -->
+        <div class="copyright">
+            <h2>Copyright &#169;2022 Abullah Mughal</h2>
+
+        </div>
+
+
+        <!-- side quick view  -->
+        <div class=" active-quick ">
+            <div class="side-quick-view">
+                <ion-icon id="quick-close" name="close-outline"></ion-icon>
+                <div style="display:flex; justify-content:center;">
+                    <img src="images/trending-2-hover.png" alt="" class="quick-view-img">
+                </div>
+                <div class="quick-view-des">
+                    <h1 class="quick-brand-code">MTP-E600B-2B</h1>
+                    <h3 class="quick-brand-price">RS12,000.00 - RS12,800.00</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>Lorem ipsum dolor sit amet.
+                        </li>
+
+                    </ul>
+                </div>
+
+                <h1 style="opacity:0.6;margin-top: 40px;margin-bottom: 10px; ">color</h2>
+                    <div class="color">
+                        <span class="color-black"></span>
+                        <span class="color-blue"></span>
+                        <span class="color-green"></span>
+                        <span class="color-pink"></span>
+                    </div>
+
+                    <!-- <div class="count-box">
+                        <span class="count-box-left">-</span>
+                        <span class="count-box-center">0</span>
+                        <span class="count-box-right">+</span>
+                        <span><ion-icon class="count-box-icon" name="bag-handle-outline"></ion-icon></span>
+                    </div> -->
+
+                    <div class="quick-view-btns">
+                        <div class="counter">
+                            <ion-icon name="remove-outline"></ion-icon>
+                            <input value="1" min="1" max="20">
+                            <ion-icon name="add-outline"></ion-icon>
+
+
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    
+
+
+
+
+            </div>
+        </div>
+
+        <!-- icons CDN -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!--  -->
+        <!-- index.js -->
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
